@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="main">
-        <div class="main__container">
+        <div class="main__container" id="container">
             <div class="header">
                 <div class="header__container">
                     <div class="header__elems">
@@ -25,162 +25,42 @@
                         <div class="header__item header__item3">
                             <a href="warsaw.html">Warsaw</a>
                         </div>
-                        <div class="header__item header__item4">
-        
-                        </div>
-                        <div class="header__item header__item5">
-        
-                        </div>
-                        <div class="header__item header__item6">
-        
-                        </div>
                         <div class="header__search">
-                            <input type="text" id="input" class="input" placeholder="Search.." onclick="search()">
-                            <button id="submit">Submit</button>
+                            <input type="text" id="input" class="input" placeholder="Search..">
+                            <button id="submit"  onclick="search()">Submit</button>
+                        </div>
+                        <div class="header__filters">
+                            <div class="header__row header__row1">
+                                <label for="Cathedral">Cathedrals</label>
+                                <input type="radio" id="Cathedral" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="Palace">Palaces</label>
+                                <input type="radio" id="Palace" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="Museum">Museums</label>
+                                <input type="radio" id="Museum" class="radio" name="radio" onclick="filtration(this.id)">
+                            </div>
+                            <div class="header__row header__row2">
+                                <label for="Cathedral">Venice Attractions</label>
+                                <input type="radio" id="Venice" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="Palace">Warsaw Attractions</label>
+                                <input type="radio" id="Warsaw" class="radio" name="radio" onclick="filtration(this.id)">
+                                <label for="All">All</label>
+                                <input type="radio" id="All" class="radio" name="radio" onclick="render()">
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="main__title">
-                <h2>Venice</h2>
+            <div id="cards">
+
             </div>
-            <div class="main__row" id="row1">
-                <div class="main__card" id="0" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>The Grand Canal</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="search_attr.html"><img src="./assets/img_venezia_attr/image3.png" alt="img"></a>
-                    </div>
+            <div class="main__pagination">
+                <div class="main__pag main__pag1">
+                    <img src="./assets/img/5937625_arrow_down_left_next_right_icon.png" alt="" onclick="prev()">                       
                 </div>
-                <div class="main__card" id="1" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Majors Hill Park</p>
-                    </div>
-                    <div class="main__img main__img2">
-                        <a href="#"><img src="./assets/img_venezia_attr/image6.png" alt="img"></a>
-                    </div>
+                <div class="main__pag main__pag2">
+                    <p>...</p>                    
                 </div>
-                <div class="main__card" id="2" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>St. Mark's Cathedral</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_venezia_attr/image11.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="3" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>The Doge's Palace</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_venezia_attr/image14.png" alt="img"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="main__row" id="row2">
-                <div class="main__card" id="4" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>St. Mark's Clock Tower</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_venezia_attr/image19 (1).png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="5" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Teatro La Fenice</p>
-                    </div>
-                    <div class="main__img main__img15">
-                        <a href="#"><img src="./assets/img_venezia_attr/image21 (1).png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="6" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Cathedral of Santa Maria</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_venezia_attr/image28 (1).png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="7" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Rialto Bridge</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_venezia_attr/image30 (1).png" alt="img"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="main__title">
-                <h2>Warsaw</h2>
-            </div>
-            <div class="main__row" id="row3">
-                <div class="main__card" id="8" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>The Vilanava Palace</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image3.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="9" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Lazenkovsky Palace</p>
-                    </div>
-                    <div class="main__img main__img15">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image5.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="10" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>St. Anne's Church</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image11.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="11" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Varso Tower</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image14.png" alt="img"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="main__row" id="row4">
-                <div class="main__card" id="12" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Old Town</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image19.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="13" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Frederic Chopin Museum</p>
-                    </div>
-                    <div class="main__img main__img2">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image21.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="14" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Warsaw Barbican</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image28.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="main__card" id="15" onclick="Open(this.id)">
-                    <div class="main__subtitle">
-                        <p>Marie Skłodowska-Curie Museum</p>
-                    </div>
-                    <div class="main__img">
-                        <a href="#"><img src="./assets/img_warsaw_attr/image30.png" alt="img"></a>
-                    </div>
+                <div class="main__pag main__pag3" >
+                    <img src="./assets/img/5937605_arrow_down_left_next_right_icon.png" alt="" onclick="next()">                   
                 </div>
             </div>
         </div>
