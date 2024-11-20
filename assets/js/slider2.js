@@ -7,7 +7,7 @@ const sliderLine= document.querySelector('.main__line');
 
 function nextSlide() {
     offset += 1920;
-    if (offset >= 5760) {
+    if (offset >= 3840) {
         offset = 0
     }
     sliderLine.style.left = -offset + 'px';
@@ -15,10 +15,11 @@ function nextSlide() {
 function prevSlide() {
     offset -= 1920;
     if (offset < 0) {
-        offset = 3840;
+        offset = 1920;
     }
     sliderLine.style.left = -offset + 'px'
 }
-document.querySelector('.btns__btn-next').addEventListener('click', nextSlide)
 
-document.querySelector('.btns__btn-prev').addEventListener('click', prevSlide)
+document.querySelector('.btns__btn-next').onclick = nextSlide
+
+document.querySelector('.btns__btn-prev').onclick = prevSlide
