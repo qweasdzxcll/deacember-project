@@ -139,8 +139,13 @@ body {
   width: 100%;
   height: 16vh;
 }
+@media (max-width: 321px) {
+  .main__img {
+    max-width: 20vh;
+  }
+}
 .main__img :hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 .main__img img {
   max-width: 25vh;
@@ -168,6 +173,11 @@ body {
     font-size: 12px;
   }
 }
+@media (max-width: 321px) {
+  .main__subtitle {
+    font-size: 10px;
+  }
+}
 .main__card {
   cursor: pointer;
 }
@@ -180,17 +190,17 @@ body {
 }
 @media (max-width: 426px) {
   .main__pagination {
-    margin-left: 18vh;
+    margin-left: 23vh;
   }
 }
 @media (max-width: 376px) {
   .main__pagination {
-    margin-left: 14vh;
+    margin-left: 19vh;
   }
 }
 @media (max-width: 321px) {
   .main__pagination {
-    margin-left: 12vh;
+    margin-left: 15vh;
   }
 }
 .main__pagination img {
@@ -210,21 +220,21 @@ body {
 }
 @media (max-width: 426px) {
   .main #cards {
-    margin-left: 1vh;
+    margin-left: 7vh;
     padding-top: 1vh;
-    gap: 15px;
+    gap: 25px;
   }
 }
 @media (max-width: 376px) {
   .main #cards {
-    margin-left: 8vh;
+    margin-left: 2vh;
     padding-top: 1vh;
     gap: 20px;
   }
 }
 @media (max-width: 321px) {
   .main #cards {
-    margin-left: 6vh;
+    margin-left: 3vh;
     padding-top: 1vh;
     gap: 20px;
   }

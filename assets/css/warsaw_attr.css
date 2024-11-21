@@ -390,7 +390,7 @@ li {
   }
 }
 .main__hover :hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 .main__row6 {
   display: flex;

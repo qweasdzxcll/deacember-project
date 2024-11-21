@@ -28,19 +28,19 @@ li {
         border-radius: 30px;
         margin: 100px auto;
         background-color: #e6e6e6;
-        width: 90vh;
+        width: 80vh;
         min-height: 110vh;
         text-align: center;
         @media (max-width: 426px) {
-            width: 49vh;
+            width: 65vh;
             margin: 0;
         }
         @media (max-width: 376px) {
-            width: 43vh;
+            width: 57vh;
             margin: 0;
         }
         @media (max-width: 321px) {
-            width: 36.8vh;
+            width: 49vh;
             margin: 0;
         }
     }
@@ -69,6 +69,7 @@ li {
         }
         @media (max-width: 376px) {
             font-size: 24px;
+            margin-left: 2vh;
         }
     }
     &__img {
@@ -115,18 +116,18 @@ li {
     &__row {
         position: relative;
         display: flex;
-        gap: 60px;
-        margin-left: 13vh;
+        gap: 40px;
+        margin-left: 11.5vh;
         @media(max-width: 426px) {
-            margin-left: 1vh;
+            margin-left: 7vh;
             gap: 25px;
         }
         @media (max-width: 376px) {
-            margin-left: 1vh;
-            gap: 30px;
+            margin-left: 7vh;
+            gap: 25px;
         }
         @media (max-width: 321px) {
-            margin-left: 1.1vh;
+            margin-left: 7vh;
             gap: 15px;
         }
     }
@@ -143,7 +144,7 @@ li {
         margin-top: 20px;
         text-align: center;
         max-width: 600px;
-        margin-left: 10vh;
+        margin-left: 7vh;
         font-size: 24px;
         @media (max-width: 426px) {
             width: 380px;
@@ -167,19 +168,21 @@ li {
     &__map {
         margin-top: 5vh;
         iframe {
-            width: 90vh;
+            width: 80vh;
             border-radius: 30px;
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
-            height: 420px;
             @media (max-width: 426px) {
                 width: 422px;
+                height: 420px;
             }
             @media (max-width: 376px) {
-                width: 375px;
+                width: 370px; 
+                height: 370px;
             }
             @media (max-width: 321px) {
-                width: 315px;
+                width: 320px;
+                height: 350px;
             }
         }
     }

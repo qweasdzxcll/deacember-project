@@ -70,20 +70,21 @@ li {
         z-index: 1;
         position: absolute;
         font-size: 48px;
-        // bottom: 460px;
+        bottom: 460px;
         background-color: rgba(255, 255, 255, 0.295);
         border-radius: 50px;
         @media (max-width: 426px) {
             font-size: 24px;
-            width: 216px;
+            width: 201px;
             position: relative;
             left: 110px;
         }
         a {
             padding: 15px 25px;
-            width: 450px;
+            width: 201px;
             @media (max-width: 426px) {
                 width: 250px;
+                padding: 0;
             }
         }
     }
@@ -140,7 +141,7 @@ li {
         bottom: 400px;
         left: 10px;
         @media (max-width: 426px) {
-            bottom: 700px;
+            top: 120px;
         }
     }
     &__btn-next {
@@ -149,7 +150,7 @@ li {
         left: 1830px;
         @media (max-width: 426px) {
             left: 370px;
-            bottom: 700px;
+            top: 120px;
         }
     }
 }

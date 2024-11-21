@@ -237,7 +237,7 @@ li {
 @media (max-width: 426px) {
   .contacts__comment label {
     position: relative;
-    bottom: 80px;
+    bottom: 100px;
   }
 }
 .contacts__comment textarea {
@@ -255,7 +255,7 @@ li {
     height: 80px;
     font-size: 12px;
     position: relative;
-    bottom: 70px;
+    bottom: 95px;
   }
 }
 .contacts textarea {
@@ -290,7 +290,7 @@ li {
 @media (max-width: 426px) {
   .contacts__submit {
     position: relative;
-    bottom: 112px;
+    bottom: 135px;
     margin-left: 194px;
   }
 }

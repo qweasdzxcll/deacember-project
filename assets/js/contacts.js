@@ -11,8 +11,8 @@ function conOpen() {
 
 function conClose() {
     form.style.display = 'none'
-    alert('Спасибо за комментарий')
     img.style.display = 'flex'
+    alert('Спасибо за комментарий')
 }
 
 btn.onclick = conOpen;
