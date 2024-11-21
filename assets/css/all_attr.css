@@ -18,6 +18,13 @@ body {
   margin: 0 auto;
 }
 
+.loader {
+  font-size: 30px;
+  font-family: Protest Strike;
+  text-align: center;
+  display: block;
+}
+
 .main__container {
   max-width: 130vh;
   width: 100%;
@@ -103,7 +110,17 @@ body {
 }
 @media (max-width: 426px) {
   .main .header__filters label {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 376px) {
+  .main .header__filters label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 321px) {
+  .main .header__filters label {
+    font-size: 8px;
   }
 }
 .main .header__filters input {

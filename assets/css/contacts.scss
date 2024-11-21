@@ -31,13 +31,7 @@ li {
         font-family: Protest Strike;
         display: flex;
         @media (max-width: 426px) {
-            display: none;
-        }
-    }
-    &__burgerbtn {
-        display: none;
-        @media(max-width: 426px) {
-            display: block;
+            font-size: 20px;
         }
     }
     &__contact {
@@ -62,57 +56,8 @@ li {
         align-items: center;
         font-size: 40px;
         gap: 150px;
-    }
-    &__burger {
-        display: none;
-        background-color: rgba(128, 128, 128, 0.719);
-        border-radius: 30px;
-        color: white;
-        font-family: Protest Strike;
-        position: absolute;
-        z-index: 12388750;
-        top: 30px;
-        left: 30px;
-    }
-    &__burger-cont {
-        text-align: center;
-        align-items: center;
-        font-size: 24px;
-        width: 250px;
-        height: 370px;
-    }
-    &__burger-item {
-        padding-top: 20px;
-    }
-    &__burger-form {
-        input {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 30px;
-            outline: 0;
-            width: 150px;
-        }
-    }
-    &__burger-close {
-        margin-top: 10px;
-        margin-right: 10px;
-        float: right;
-        img {
-            width: 25px;
-            height: 25px;
-        }
-    }
-    &__burgerbtn {
-        display: none;
         @media (max-width: 426px) {
-            position: absolute;
-            display: block;
-        }
-        img {
-            position: relative;
-            top: 20px;
-            width: 30px;
-            height: 30px;
+            gap: 40px;
         }
     }
 }
@@ -218,8 +163,6 @@ li {
             border-radius: 30px;
             width: 300px;
             height: 200px;
-            left: 50px;
-            bottom: 40px;
         }
     }
     &__title {

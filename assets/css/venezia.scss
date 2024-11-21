@@ -40,9 +40,10 @@ li {
         text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
         font-weight: 900;
         @media (max-width: 426px) {
-            width: 100px;
+            top: 50px;
+            width: 300px;
             font-size: 40px;
-            left: 100px;
+            left: 110px;
         }
     }
     &__row {

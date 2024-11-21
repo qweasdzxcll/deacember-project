@@ -116,9 +116,10 @@ li {
 @media (max-width: 376px) {
   .main__img-v img {
     width: 12vh;
+    height: 17vh;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 321px) {
   .main__img-v img {
     width: 10vh;
     height: 14vh;
@@ -145,7 +146,7 @@ li {
 @media (max-width: 321px) {
   .main__row {
     margin-left: 1.1vh;
-    gap: 25px;
+    gap: 15px;
   }
 }
 .main__row1 {
@@ -153,6 +154,11 @@ li {
 }
 .main__row2 {
   margin-top: 2vh;
+}
+@media (max-width: 321px) {
+  .main__row2 {
+    margin-top: 1vh;
+  }
 }
 .main__text {
   margin-top: 20px;

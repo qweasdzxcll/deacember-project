@@ -18,6 +18,11 @@ li {
   height: 952px;
   overflow: hidden;
 }
+@media (max-width: 426px) {
+  .main__container {
+    width: 425px;
+  }
+}
 .main__line {
   transition: all 1s;
   width: 3840px;
@@ -25,14 +30,25 @@ li {
   display: flex;
   position: relative;
 }
+@media (max-width: 426px) {
+  .main__line {
+    width: 850px;
+  }
+}
 .main__img {
   position: relative;
   z-index: 0;
   width: 1920px;
   height: 952px;
 }
+@media (max-width: 426px) {
+  .main__img {
+    width: 425px;
+    height: 300px;
+  }
+}
 .main__img img {
-  width: 1920px;
+  width: 100%;
   height: 100%;
 }
 .main__title {
@@ -46,36 +62,64 @@ li {
   text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
   font-weight: 900;
 }
-.main__title-rio {
-  font-size: 130px;
-  width: 1920px;
-  bottom: 540px;
-  left: 180px;
+@media (max-width: 426px) {
+  .main__title {
+    bottom: 180px;
+  }
 }
 .main__title-venezia {
   margin-left: 500px;
+}
+@media (max-width: 426px) {
+  .main__title-venezia {
+    margin-left: 120px;
+    font-size: 30px;
+  }
 }
 .main__seemore {
   z-index: 1;
   position: absolute;
   font-size: 48px;
-  bottom: 460px;
   background-color: rgba(255, 255, 255, 0.295);
   border-radius: 50px;
+}
+@media (max-width: 426px) {
+  .main__seemore {
+    font-size: 24px;
+    width: 216px;
+    position: relative;
+    left: 110px;
+  }
 }
 .main__seemore a {
   padding: 15px 25px;
   width: 450px;
 }
+@media (max-width: 426px) {
+  .main__seemore a {
+    width: 250px;
+  }
+}
 .main__title-warsaw {
   margin-left: 500px;
 }
-.main__seemore-rio {
-  left: 760px;
+@media (max-width: 426px) {
+  .main__title-warsaw {
+    margin-left: 120px;
+    font-size: 30px;
+  }
 }
 .main__seemore-venezia {
   margin-left: 750px;
   width: 355px;
+}
+@media (max-width: 426px) {
+  .main__seemore-venezia {
+    width: 210px;
+    margin-left: 0;
+    position: relative;
+    bottom: 180px;
+  }
 }
 .main__seemore-venezia a {
   padding: 15px 25px;
@@ -84,6 +128,14 @@ li {
 .main__seemore-warsaw {
   margin-left: 750px;
   width: 355px;
+}
+@media (max-width: 426px) {
+  .main__seemore-warsaw {
+    width: 210px;
+    margin-left: 0;
+    position: relative;
+    bottom: 180px;
+  }
 }
 .main__seemore-warsaw a {
   padding: 15px 25px;
@@ -97,13 +149,30 @@ li {
   width: 60px;
   height: 60px;
 }
+@media (max-width: 426px) {
+  .btns__btn img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .btns__btn-prev {
   position: absolute;
   bottom: 400px;
   left: 10px;
 }
+@media (max-width: 426px) {
+  .btns__btn-prev {
+    bottom: 700px;
+  }
+}
 .btns__btn-next {
   position: absolute;
   bottom: 400px;
   left: 1830px;
+}
+@media (max-width: 426px) {
+  .btns__btn-next {
+    left: 370px;
+    bottom: 700px;
+  }
 }

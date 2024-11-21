@@ -49,9 +49,10 @@ li {
 }
 @media (max-width: 426px) {
   .main__title {
+    top: 50px;
     width: 300px;
     font-size: 40px;
-    left: 80px;
+    left: 90px;
   }
 }
 .main__row {

@@ -3,11 +3,12 @@ const input = document.getElementById('input')
 const title = document.querySelector('h1')
 const submit = document.getElementById('submit')
 const text = document.querySelector('.main__text')
+const load = document.getElementById('loader')
 
 
 const Open = async (id) => {
     await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
         .then(response => DataRes = response[id])
     localStorage.setItem('data', JSON.stringify(DataRes))
     window.location.href = 'search_attr.html'
@@ -17,7 +18,7 @@ const Open = async (id) => {
 
 const search = async () => {
     let response = await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
     response.forEach(element => {
         if (input.value.toLowerCase() === element['title'].toLowerCase()) {
             localStorage.setItem('data', JSON.stringify(element))
@@ -30,7 +31,8 @@ const search = async () => {
 const render = async () => {
     const cards = document.getElementById('cards')
     let response = await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
+        load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
         if (element['id'] < pags) {
@@ -50,8 +52,10 @@ const render = async () => {
 
 
 const filtration = async (item) => {
+    load.style.display = 'block'
     let response = await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
+        load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
         if (element['title'].includes(item)) {
@@ -83,9 +87,11 @@ const filtration = async (item) => {
 
 
 let pags = 12                                       
-const next = async() => {  
+const next = async() => {
+    load.style.display = 'block'  
     let response = await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
+        load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
         if(element['id'] >= pags && element['id'] < pags*2) {
@@ -105,8 +111,10 @@ const next = async() => {
 
 
 const prev = async() => {  
+    load.style.display = 'block'
     let response = await fetch(url)
-        .then(data => data.json())
+        .then(response => response.json())
+        load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
         if (element['id'] < pags) {

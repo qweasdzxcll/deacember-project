@@ -1,21 +1,24 @@
 let offset = 0;
 const sliderLine= document.querySelector('.main__line');
-
-function nextSlide() {
-    offset += 1920;
-    if (offset >= 3840) {
-        offset = 0
-    }
-    sliderLine.style.left = -offset + 'px';
-}
-function prevSlide() {
-    offset -= 1920;
+const img = document.querySelector('.main__img')
+const slide = img.offsetWidth
+const prevSlide =() => {
+    offset -= slide;
     if (offset < 0) {
-        offset = 1920;
+        offset = slide;
     }
     sliderLine.style.left = -offset + 'px'
 }
 
-document.querySelector('.btns__btn-next').onclick = nextSlide
+const nextSlide =() => {
+    offset += slide;
+    if (offset > slide) {
+        offset = 0;
+    }
+    sliderLine.style.left = -offset + 'px'
+}
 
-document.querySelector('.btns__btn-prev').onclick = prevSlide
+document.querySelector('.btns__btn-next').onclick = prevSlide
+
+document.querySelector('.btns__btn-prev').onclick = nextSlide
+
