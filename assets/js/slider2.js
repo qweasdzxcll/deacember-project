@@ -1,10 +1,6 @@
 let offset = 0;
 const sliderLine= document.querySelector('.main__line');
 
-// setInterval(() => {
-//     nextSlide()
-// }, 3000);
-
 function nextSlide() {
     offset += 1920;
     if (offset >= 3840) {

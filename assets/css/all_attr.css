@@ -76,6 +76,7 @@ body {
 }
 @media (max-width: 426px) {
   .main .header__elems {
+    gap: 10px;
     padding-top: 5px;
     flex-wrap: wrap;
   }
@@ -129,6 +130,18 @@ body {
   width: 100%;
   height: 16vh;
 }
+@media (max-width: 426px) {
+  .main__img img {
+    max-width: 23vh;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .main__img img {
+    max-width: 25vh;
+    width: 100%;
+  }
+}
 .main__subtitle {
   font-family: Protest Strike;
   margin-bottom: 2px;
@@ -150,17 +163,17 @@ body {
 }
 @media (max-width: 426px) {
   .main__pagination {
-    margin-left: 23vh;
+    margin-left: 18vh;
   }
 }
 @media (max-width: 376px) {
   .main__pagination {
-    margin-left: 20vh;
+    margin-left: 14vh;
   }
 }
 @media (max-width: 321px) {
   .main__pagination {
-    margin-left: 14vh;
+    margin-left: 12vh;
   }
 }
 .main__pagination img {
@@ -180,21 +193,21 @@ body {
 }
 @media (max-width: 426px) {
   .main #cards {
-    margin-left: 5vh;
+    margin-left: 1vh;
     padding-top: 1vh;
-    gap: 35px;
+    gap: 15px;
   }
 }
 @media (max-width: 376px) {
   .main #cards {
-    margin-left: 2vh;
+    margin-left: 8vh;
     padding-top: 1vh;
     gap: 20px;
   }
 }
 @media (max-width: 321px) {
   .main #cards {
-    margin-left: 11vh;
+    margin-left: 6vh;
     padding-top: 1vh;
     gap: 20px;
   }

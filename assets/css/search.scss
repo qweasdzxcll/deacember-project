@@ -32,16 +32,16 @@ li {
         min-height: 110vh;
         text-align: center;
         @media (max-width: 426px) {
-            width: 63vh;
-            margin: 10px;
+            width: 49vh;
+            margin: 0;
         }
         @media (max-width: 376px) {
-            width: 55vh;
-            margin: 10px 0 10px 10px;
+            width: 43vh;
+            margin: 0;
         }
         @media (max-width: 321px) {
-            width: 47vh;
-            margin: 10px 0 10px 10px;
+            width: 36.8vh;
+            margin: 0;
         }
     }
     &__elems {
@@ -63,6 +63,7 @@ li {
         text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
         margin-left: 20vh;
         @media (max-width: 426px) {
+            font-size: 24px;
             margin-left: 2vh;
             margin-top: 1vh;
         }
@@ -81,22 +82,32 @@ li {
             width: 35vh;
             height: 20vh;
             @media (max-width: 426px) {
-                width: 33vh;
+                width: 30vh;
                 height: 17vh;
             }
+            @media (max-width: 376px) {
+                width: 25vh;
+            }
             @media (max-width: 321px) {
-                width: 27vh;
-                height: 17vh;
+                width: 22vh;
+                height: 14vh;
             }
         }
     }
     &__img-v {
         img {
-            width: 17vh;
+            width: 15vh;
             height: 20vh;
             @media (max-width: 426px) {
                 width: 14vh;
                 height: 17vh;
+            }
+            @media (max-width: 376px) {
+                width: 12vh;
+            }
+            @media (max-width: 376px) {
+                width: 10vh;
+                height: 14vh;
             }
         }
     }
@@ -106,11 +117,11 @@ li {
         gap: 60px;
         margin-left: 13vh;
         @media(max-width: 426px) {
-            margin-left: 4vh;
-            gap: 35px;
+            margin-left: 1vh;
+            gap: 25px;
         }
         @media (max-width: 376px) {
-            margin-left: 1.5vh;
+            margin-left: 1vh;
             gap: 30px;
         }
         @media (max-width: 321px) {
@@ -127,8 +138,8 @@ li {
     &__text {
         margin-top: 20px;
         text-align: center;
-        max-width: 650px;
-        margin-left: 9vh;
+        max-width: 600px;
+        margin-left: 10vh;
         font-size: 24px;
         @media (max-width: 426px) {
             width: 380px;
@@ -152,20 +163,19 @@ li {
     &__map {
         margin-top: 5vh;
         iframe {
+            width: 90vh;
             border-radius: 30px;
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
+            height: 420px;
             @media (max-width: 426px) {
-                width: 410px;
-                height: 420px;
+                width: 422px;
             }
             @media (max-width: 376px) {
-                width: 357px;
-                height: 420px;
+                width: 375px;
             }
             @media (max-width: 321px) {
-                width: 305px;
-                height: 420px;
+                width: 315px;
             }
         }
     }

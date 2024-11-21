@@ -1,4 +1,4 @@
-const url = 'https://672c8d021600dda5a9f8e610.mockapi.io/qweasdzxc'
+const url = ('https://672c8d021600dda5a9f8e610.mockapi.io/qweasdzxc')
 const input = document.getElementById('input')
 const title = document.querySelector('h1')
 const submit = document.getElementById('submit')

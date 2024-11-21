@@ -33,8 +33,13 @@ li {
         display: block;
     }
     &__item {
-        @media (max-width: 426px) {
-            width: 400px;
+        img {
+            @media (max-width: 426px) {
+                width: 400px;
+            }
+            @media (max-width: 376px) {
+                width: 330px;
+            }
         }
 
     }
@@ -113,6 +118,10 @@ li {
         p {
             @media (max-width: 426px) {
                 width: 400px;
+            }
+            @media (max-width: 376px) {
+                width: 330px;
+                font-size: 35px;
             }
         }
     }
@@ -304,7 +313,7 @@ li {
     }
     &__box-3 {
         position: relative;
-        bottom: 78px;
+        bottom: 27px;
         margin-left: 120px;
         @media (max-width: 426px) {
             position: relative;
