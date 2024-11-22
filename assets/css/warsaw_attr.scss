@@ -21,7 +21,7 @@ li {
     &__title {
         font-size: 40px;
         font-family: Protest Strike;
-        width: 400px;
+        width: 250px;
         color: rgba(255, 255, 255, 0.288);
     }
     &__elems {
@@ -365,7 +365,7 @@ li {
         margin-left: 120px;
         @media (max-width: 426px) {
             position: relative;
-            top: 1470px;
+            top: 1520px;
             margin-left: 0;
         }
     }
@@ -460,7 +460,7 @@ li {
         left: 400px;
         bottom: 95px;
         @media (max-width: 426px) {
-            bottom: 1120px;
+            bottom: 1155px;
             left: 10px;
         }
     }

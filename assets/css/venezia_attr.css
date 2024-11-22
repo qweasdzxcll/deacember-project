@@ -706,23 +706,3 @@ li {
     font-size: 13px;
   }
 }
-@media (max-width: 426px) {
-  .main__img img {
-    width: 400px;
-  }
-}
-@media (max-width: 376px) {
-  .main__img img {
-    width: 370px;
-  }
-}
-@media (max-width: 376px) {
-  .main__vert img {
-    width: 150px;
-  }
-}
-@media (max-width: 376px) {
-  .main__item {
-    width: 370px;
-  }
-}
