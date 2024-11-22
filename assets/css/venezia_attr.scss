@@ -625,26 +625,4 @@ li {
             }
         }
     }
-    &__img {
-        img {
-            @media (max-width: 426px) {
-                width: 400px;
-            }
-            @media (max-width: 376px) {
-                width: 370px;
-            }
-        }
-    }
-    &__vert {
-        img {
-            @media (max-width: 376px) {
-                width: 150px;
-            }
-        }
-    }
-    &__item {
-        @media (max-width: 376px) {
-            width: 370px;
-        }
-    }
 }

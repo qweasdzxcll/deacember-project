@@ -187,6 +187,7 @@ body {
   margin-top: 3vh;
   gap: 20px;
   font-size: 30px;
+  cursor: pointer;
 }
 @media (max-width: 426px) {
   .main__pagination {
@@ -238,4 +239,10 @@ body {
     padding-top: 1vh;
     gap: 20px;
   }
+}
+.main .active {
+  display: block;
+}
+.main .notactive {
+  display: none;
 }

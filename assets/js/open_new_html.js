@@ -86,15 +86,15 @@ const filtration = async (item) => {
 
 
 
-let pags = 12                                       
-const next = async() => {
+let pags = 16                                       
+const next  = async(id) => {
     load.style.display = 'block'  
     let response = await fetch(url)
         .then(response => response.json())
         load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
-        if(element['id'] >= pags && element['id'] < pags*2) {
+        if(element['id'] >= pags && element['id'] < pags + 16) {
             cards.innerHTML += `
                 <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
                     <div class="main__subtitle" id="subtitle${element['id']}">
@@ -106,7 +106,7 @@ const next = async() => {
                 </div>
                `
         }
-    })
+    });
 }
 
 
