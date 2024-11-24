@@ -139,7 +139,7 @@ body {
             width: 100%;
             height: 16vh;
             @media(max-width: 426px) {
-                max-width: 23vh;
+                max-width: 180px;
                 width: 100%;
             }
             @media(max-width: 376px) {
@@ -194,7 +194,7 @@ body {
         max-width: 180vh; 
         flex-wrap: wrap; 
         @media (max-width: 426px) {
-            margin-left: 7vh;
+            margin-left: 35px;
             padding-top: 1vh;
             gap: 25px;
         }
