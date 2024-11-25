@@ -6,7 +6,7 @@ const url = 'https://672c8d021600dda5a9f8e610.mockapi.io/qweasdzxc'
 const renderHeader = async () => {
     let response = await fetch(url)
         response = await response.json()
-    spis = []
+    let spis = []
     response.forEach(element => {
         spis.push(element['city'])
     });
@@ -33,5 +33,3 @@ const renderHeader = async () => {
     }
 }
 renderHeader()
-
-

@@ -134,7 +134,7 @@ li {
 }
 @media (max-width: 426px) {
   .main__row {
-    margin-left: 50px;
+    margin-left: 10px;
     gap: 25px;
   }
 }
