@@ -7,8 +7,8 @@ const load = document.getElementById('loader')
 
 
 const Open = async (id) => {
-    await fetch(url)
-        .then(response => response.json())
+    let response = await fetch(url)
+        response = await response.json()
         .then(response => DataRes = response[id])
     localStorage.setItem('data', JSON.stringify(DataRes))
     window.location.href = 'search_attr.html'
@@ -17,7 +17,7 @@ const Open = async (id) => {
 
 const search = async () => {
     let response = await fetch(url)
-        .then(response => response.json())
+        response = await response.json()
     response.forEach(element => {
         if (input.value.toLowerCase() === element['title'].toLowerCase()) {
             localStorage.setItem('data', JSON.stringify(element))
@@ -30,7 +30,7 @@ const search = async () => {
 const render = async () => {
     const cards = document.getElementById('cards')
     let response = await fetch(url)
-    response = await response.json()
+        response = await response.json()
         load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
@@ -53,7 +53,7 @@ const render = async () => {
 const filtration = async (item) => {
     load.style.display = 'block'
     let response = await fetch(url)
-        .then(response => response.json())
+        response = await response.json()
         load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
@@ -73,16 +73,15 @@ const filtration = async (item) => {
 }
 
 
-
-let pags = 16                                       
+let pags = 12
 const next  = async(id) => {
     load.style.display = 'block'  
     let response = await fetch(url)
-        .then(response => response.json())
+        response = await response.json()
         load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
-        if(element['id'] >= pags && element['id'] < pags + 16) {
+        if(element['id'] >= pags && element['id'] < pags + 12) {
             cards.innerHTML += `
                 <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
                     <div class="main__subtitle" id="subtitle${element['id']}">
@@ -95,17 +94,18 @@ const next  = async(id) => {
                `
         }
     });
+    pags += 12
 }
-
 
 const prev = async() => {  
     load.style.display = 'block'
     let response = await fetch(url)
-        .then(response => response.json())
+        response = await response.json()
         load.style.display = 'none'
     cards.innerHTML = ''
     response.forEach(element => {
-        if (element['id'] < pags) {
+        if (element['id'] < pags - 12 && element['id'] > pags - 25) {
+            console.log(element)
             cards.innerHTML += `
                 <div class="main__card" id="${element['id']}" onclick="Open(this.id)">
                     <div class="main__subtitle" id="subtitle${element['id']}">
@@ -118,5 +118,6 @@ const prev = async() => {
                 `
         }
     });
+    pags -= 12
 }
 render()

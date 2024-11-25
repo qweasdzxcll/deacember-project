@@ -25,6 +25,11 @@ li {
   padding: 3vh;
   border-radius: 30px;
 }
+@media (max-width: 426px) {
+  .header__container {
+    margin-left: 0;
+  }
+}
 .header__elem {
   font-size: 24px;
 }
@@ -37,10 +42,21 @@ li {
   margin: 5vh 15vh;
   cursor: pointer;
 }
+@media (max-width: 426px) {
+  .main__card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 .main__container {
   background-color: #e6e6e6;
   border-radius: 30px;
   margin-left: 30vh;
+}
+@media (max-width: 426px) {
+  .main__container {
+    margin-left: 0;
+  }
 }
 .main__title {
   font-family: Protest Strike;
@@ -52,9 +68,19 @@ li {
   display: flex;
   gap: 10px;
 }
+@media (max-width: 426px) {
+  .main__rows {
+    gap: 3px;
+  }
+}
 .main__row {
   display: flex;
   gap: 25px;
+}
+@media (max-width: 426px) {
+  .main__row {
+    gap: 9px;
+  }
 }
 .main__text {
   max-width: 40vh;
@@ -64,6 +90,12 @@ li {
   font-size: 20px;
   text-align: center;
 }
+@media (max-width: 426px) {
+  .main__text {
+    width: 150px;
+    font-size: 11px;
+  }
+}
 .main__img {
   outline: 7px solid grey;
   outline-offset: -6px;
@@ -72,13 +104,25 @@ li {
   max-width: 23vh;
   height: 15vh;
 }
+@media (max-width: 426px) {
+  .main__img-gor {
+    width: 80px;
+    height: 60px;
+  }
+}
 .main__img-gor img {
   width: 100%;
   height: 100%;
 }
 .main__img-vert {
-  max-width: 18vh;
+  width: 11vh;
   height: 15vh;
+}
+@media (max-width: 426px) {
+  .main__img-vert {
+    width: 40px;
+    height: 60px;
+  }
 }
 .main__img-vert img {
   width: 100%;

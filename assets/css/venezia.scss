@@ -137,22 +137,6 @@ li {
             text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
             margin-left: 30px;
         }
-        &__form {
-            @media (max-width: 426px) {
-                display: none;
-            }
-            input {
-                width: 250px;
-                height: 50px;
-                outline: 0;
-                border: none;
-                border-radius: 50px;
-                font-family: Protest Strike;
-                color: rgba(0, 0, 0, 0.577);
-                font-size: 20px;
-                padding-left: 20px;
-            }
-        }
         &__burger {
             display: none;
             background-color: rgba(128, 128, 128, 0.719);
@@ -162,16 +146,17 @@ li {
             position: absolute;
             z-index: 12388750;
             top: 30px;
+            right: 150px;
         }
         &__burger-cont {
             text-align: center;
             align-items: center;
-            font-size: 24px;
-            width: 250px;
-            height: 370px;
+            font-size: 20px;
+            width: 200px;
+            min-height: 250px;
         }
         &__burger-item {
-            padding-top: 20px;
+            padding-top: 10px;
         }
         &__burger-form {
             input {
@@ -199,10 +184,13 @@ li {
             img {
                 position: relative;
                 bottom: 10px;
-                right: 20px;
+                right: 80px;
                 width: 30px;
                 height: 30px;
             }
+        }
+        &__burger-contact {
+            margin-bottom: 10px;
         }
     }
 }

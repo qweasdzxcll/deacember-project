@@ -47,9 +47,6 @@ li {
         }
     }
     &__row {
-        // p {
-        //     color: black;
-        // }
         position: absolute;
         display: flex;
         margin: 0 65px;
@@ -110,7 +107,7 @@ li {
         &__attrs {
             cursor: pointer;
             display: flex;
-            gap: 65px;
+            gap: 35px;
         }
         &__item {
             @media (max-width: 426px) {
@@ -123,6 +120,7 @@ li {
         }
         &__item {
             font-family: Protest Strike;
+            font-size: 30px;
         }
         &__item-2 {
             width: 250px;
@@ -132,7 +130,7 @@ li {
             display: flex;
             align-items: center;
             font-size: 30px;
-            gap: 65px;
+            gap: 35px;
             text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
             margin-left: 30px;
         }
@@ -140,23 +138,7 @@ li {
             @media (max-width: 426px) {
                 padding-top: 20px;
             }
-        }
-        &__form {
-            @media (max-width: 426px) {
-                display: none;
-            }
-            input {
-                width: 250px;
-                height: 50px;
-                outline: 0;
-                border: none;
-                border-radius: 50px;
-                font-family: Protest Strike;
-                color: rgba(0, 0, 0, 0.577);
-                font-size: 20px;
-                padding-left: 20px;
-            }
-        }
+        } 
         &__burger {
             display: none;
             background-color: rgba(128, 128, 128, 0.719);
@@ -165,19 +147,18 @@ li {
             font-family: Protest Strike;
             position: absolute;
             z-index: 12388750;
-            // margin-left: 1450px;
             top: 30px;
+            right: 150px;
         }
         &__burger-cont {
             text-align: center;
             align-items: center;
-            font-size: 24px;
-            // display: none;
-            width: 250px;
-            height: 370px;
+            font-size: 20px;
+            width: 200px;
+            min-height: 250px;
         }
         &__burger-item {
-            padding-top: 20px;
+            padding-top: 10px;
         }
         &__burger-form {
             input {
@@ -204,11 +185,14 @@ li {
             }
             img {
                 position: relative;
-                right: 20px;
+                right: 50px;
                 bottom: 10px;
                 width: 30px;
                 height: 30px;
             }
+        }
+        &__burger-contact {
+            margin-bottom: 10px;
         }
     }
 }
