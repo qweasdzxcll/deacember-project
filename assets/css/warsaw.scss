@@ -101,25 +101,16 @@ li {
                 color: white;
             }
             width: 1830px;
-            margin: 10px 30px;
+            margin: 20px 30px;
             display: flex;
             @media(max-width: 426px) {
                 width: 300px;
             }
         }
-        &__title {
-            @media (max-width: 426px) {
-                display: none;
-            }
-            font-family: Protest Strike;
-            font-size: 28px;
-            margin-right: 50px;
-            color: white;
-            background-color: black;
-            border-radius: 50px;
-            h2 {
-                padding: 10px;
-            }
+        &__attrs {
+            cursor: pointer;
+            display: flex;
+            gap: 65px;
         }
         &__item {
             @media (max-width: 426px) {
@@ -140,9 +131,10 @@ li {
             color: white;
             display: flex;
             align-items: center;
-            font-size: 40px;
+            font-size: 30px;
             gap: 65px;
             text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
+            margin-left: 30px;
         }
         &__burger-contact {
             @media (max-width: 426px) {
