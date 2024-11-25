@@ -191,7 +191,7 @@ body {
 }
 @media (max-width: 426px) {
   .main__pagination {
-    margin-left: 23vh;
+    margin-left: 150px;
   }
 }
 @media (max-width: 376px) {
@@ -221,7 +221,7 @@ body {
 }
 @media (max-width: 426px) {
   .main #cards {
-    margin-left: 35px;
+    margin-left: 20px;
     padding-top: 1vh;
     gap: 25px;
   }
@@ -239,10 +239,4 @@ body {
     padding-top: 1vh;
     gap: 20px;
   }
-}
-.main .active {
-  display: block;
-}
-.main .notactive {
-  display: none;
 }

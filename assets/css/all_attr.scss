@@ -169,7 +169,7 @@ body {
         font-size: 30px;
         cursor: pointer;
         @media (max-width: 426px) {
-            margin-left: 23vh;
+            margin-left: 150px;
         }
         @media (max-width: 376px) {
             margin-left: 19vh;
@@ -194,7 +194,7 @@ body {
         max-width: 180vh; 
         flex-wrap: wrap; 
         @media (max-width: 426px) {
-            margin-left: 35px;
+            margin-left: 20px;
             padding-top: 1vh;
             gap: 25px;
         }
@@ -208,11 +208,5 @@ body {
             padding-top: 1vh;
             gap: 20px;
         }
-    }
-    .active {
-        display: block;
-    }
-    .notactive {
-        display: none;
     }
 }
