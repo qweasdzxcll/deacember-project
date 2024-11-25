@@ -3,7 +3,7 @@ const url = 'https://672c8d021600dda5a9f8e610.mockapi.io/qweasdzxc'
 
 const render = async () => {
     let response = await fetch(url)
-    response = await response.json()
+        response = await response.json()
     response.forEach(element => {
         if (element['city'] == localStorage.getItem('id')) {
             let text = element['text'].split('.')[0]
@@ -40,11 +40,13 @@ const render = async () => {
 }
 
 const Open = async (id) => {
-    await fetch(url)
-        .then(response => response.json())
+    let response = await fetch(url)
+        response = await response.json()
         .then(response => DataRes = response[id])
     localStorage.setItem('data', JSON.stringify(DataRes))
     window.location.href = 'search_attr.html'
 }
+
+
 
 render()
