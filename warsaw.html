@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <section class="main">
+    <main class="main">
         <header class="header">
             <div class="header__container">
                 <div class="header__elems" id="elems">
                     <div class="header__item header__item-3">
-                        <a href="venezia.html">Venice</a>
+                        <a href="venice.html">Venice</a>
                     </div>
                     <div class="header__item header__item-4">
                         <p>Warsaw</p>
@@ -27,10 +27,10 @@
                         
                     </div>
                     <div class="header__item header__allattr">
-                        <a href="all_attr.html">All Attractions</a>
+                        <a href="all_attr.html?page=1&limit=4">All Attractions</a>
                     </div>
                     <div class="header__item header__cont">
-                        <a href="contacts.html">Contacts</a>
+                        <a href="contacts.html">Reviews</a>
                     </div>
                     <div class="header__burgerbtn">
                         <img src="https://s.iimg.su/s/11/2i1tCX6V0atlpzxmoJE4STXIuSYfGd3QHoWXeeKy.png" alt="burger">
@@ -42,7 +42,7 @@
                                     <img src="https://s.iimg.su/s/11/6l1YGOA4UTtqmY86cCFeqYMuJkFrUf7X4iM97rse.png" alt="close">
                                 </div>
                                 <div class="header__burger-item header__burger-item3">
-                                    <a href="venezia.html">Venice</a>
+                                    <a href="venice.html">Venice</a>
                                 </div>
                                 <div class="header__burger-item header__burger-item4" style="color: rgba(255, 255, 255, 0.288);">
                                     <p>Warsaw</p>
@@ -51,10 +51,10 @@
 
                                 </div>
                                 <div class="header__burger-item header__burger-item6">
-                                    <a href="all_attr.html">All Attractions</a>
+                                    <a href="all_attr.html?page=1&limit=4">All Attractions</a>
                                 </div>
                                 <div class="header__burger-item header__burger-contact">
-                                    <a href="contacts.html">Contacts</a>
+                                    <a href="contacts.html">Reviews</a>
                                 </div>
                             </div>
                         </div>
@@ -63,27 +63,116 @@
             </div>
         </div>
         </header>
-        <div class="main__img">
+        <div class="main__container">
+            <div class="main__block">
+                <div class="main__title">
+                    <h1>Warsaw</h1>
+                </div>
+                <div class="main__text">
+                    <p>Варшава - столица  Польши и крупнейший город страны с непростой историей и судьбой. Интересное сочетание старины и традиций, современного ритма жизни и энергии большого
+                        мегаполиса.</p>
+                </div>
+                <div class="main__btn">
+                    <a href="#info">See More</a>
+                </div>
+            </div>
+            <div class="main__slider">
+                <div class="main__line">
+                    <div class="main__img">
+                        <img src="./assets/warsaw_img/architecture-poland.jpg" id="img" alt="">
+                    </div>
+                    <div class="main__img">
+                        <img src="./assets/warsaw_img/955f0f66c2d52b230c12f5f7984cb443.jpg" id="img" alt="">
+                    </div>
+                    <div class="main__img">
+                        <img src="./assets/warsaw_img/view-peles-castle-romania.jpg" id="img" alt="">
+                    </div>
+                    <div class="main__img">
+                        <img src="./assets/warsaw_img/czech-architecture.jpg" id="img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="info">
+            <div class="info__container" id="info">
+                <div class="info__row">
+                    <div class="info__map">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.98226867567!2d20.89661629285581!3d52.23288709833719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2z0JLQsNGA0YjQsNCy0LAsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sru!4v1728991842786!5m2!1sru!2sru"
+                        width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info__text">
+                        <p>Варшава расположена в центральной части Польши. С 16 века, когда город был выбран в качестве
+                            столицы польского государства, он был разрушен несколько раз из за войн. Исторические здания здесь гармонично сочетаются с современной архитектурой, а над черепичными
+                            крышами восстановленного Старого города возвышаются небоскрёбы.</p>
+                        <p>Висла делит столицу Польши на две части. Правый берег Варшавы был заселён раньше, примерно в 9 -
+                            10 веке, тогда как современный исторический центр расположен на левом. Архитектура Варшавы — это сочетание разных исторических эпох и стилей, которые отражают богатую
+                            историю Польши и её столицы.</p>
+                        <p>Площадь города - 517 км2.
+                            Население - 1.8 млн человек.
+                            Язык - польский.</p>
+                        <div class="info__btn">
+                            <a href="attractions.html?city=Warsaw">Достопримечательности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__block">
+                    <div class="footer__item">
+                        <a href="contacts.html">Оставить отзыв</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="all_attr.html">Посмотреть все достопримечательности</a>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__item">
+                        <p>E-mail: email@mail.ru</p>
+                    </div>
+                    <div class="footer__item">
+                        <p>Telegram: @telegram</p>        
+                    </div>
+                    <div class="footer__item">
+                        <p>Facebook: @facebook</p>
+                    </div>
+                    <div class="footer__item">
+                        <p>Instagram: @instagram</p>
+                    </div>
+                    <div class="footer__item">
+                        <p>Twitter: @twitter</p>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__item">
+                        <p>Политика конфиденциальности</p>
+                    </div>
+                    <div class="footer__item">
+                        <p>FAQ</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="main__img">
             <img src="./assets/img/warsaw.png" alt="Venezia">
             <div class="main__title">
                 <h1>Warsaw</h1>
             </div>
             <div class="main__row main__row-1">
                 <div class="main__card">
-                    <p>Варшава - столица  Польши и крупнейший город страны с непростой историей и судьбой. Интересное сочетание старины и традиций, современного ритма жизни и энергии большого
-                        мегаполиса.</p>
+                    <p></p>
                 </div>
                 <div class="main__card">
-                    <p>Варшава расположена в центральной части Польши. С 16 века, когда город был выбран в качестве
-                        столицы польского государства, он был разрушен несколько раз из за войн.</p>
+                    <p></p>
                 </div>
                 <div class="main__card" style="padding-top: 10px;">
-                    <p> Исторические здания здесь гармонично сочетаются с современной архитектурой, а над черепичными
-                        крышами восстановленного Старого города возвышаются небоскрёбы.</p>
+                    <p></p>
                 </div>
                 <div class="main__card" style="padding-top: 20px;">
-                    <p>Висла делит столицу Польши на две части. Правый берег Варшавы был заселён раньше, примерно в 9 -
-                        10 веке, тогда как современный исторический центр расположен на левом.</p>
+                    <p></p>
                 </div>
             </div>
             <div class="main__row main__row-2">
@@ -92,17 +181,14 @@
                         резиденцию из Кракова. Первые упоминания о городе датируются 14 веком.</p>
                 </div>
                 <div class="main__card" style="padding-top: 40px;">
-                    <p>Площадь города - 517 км2.
-                        Население - 1.8 млн человек.
-                        Язык - польский</p>
+                    <p></p>
                 </div>
                 <div class="main__card" style="padding-top: 10px;">
                     <p>Лучшее время для посещения столицы Польши - период с мая по сентябрь. Самые холодные месяцы -
                         январь и февраль. Поздней осенью и ранней весной здесь может быть дождливо. </p>
                 </div>
                 <div class="main__card" style="padding-top: 30px;">
-                    <p>Архитектура Варшавы — это сочетание разных исторических эпох и стилей, которые отражают богатую
-                        историю Польши и её столицы.</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -130,10 +216,11 @@
                 <a href="#">+7 (901)-999-12-21</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/open.js"></script>
+    <script src="./assets/js/newSlider.js"></script>
 </body>
 
 </html>

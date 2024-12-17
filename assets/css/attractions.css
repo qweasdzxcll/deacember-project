@@ -33,8 +33,12 @@ li {
 .header__elem {
   font-size: 24px;
 }
+.header__elem :hover {
+  text-decoration: underline;
+}
 
 .main {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
@@ -52,6 +56,8 @@ li {
   background-color: #e6e6e6;
   border-radius: 30px;
   margin-left: 30vh;
+  animation-name: left;
+  animation-duration: 5s;
 }
 @media (max-width: 426px) {
   .main__container {
@@ -101,6 +107,7 @@ li {
   outline-offset: -6px;
 }
 .main__img-gor {
+  background-color: rgba(0, 0, 0, 0.351);
   max-width: 23vh;
   height: 15vh;
 }
@@ -127,4 +134,44 @@ li {
 .main__img-vert img {
   width: 100%;
   height: 100%;
+}
+.main__modal {
+  position: fixed;
+  z-index: 99;
+  width: 30vw;
+  margin: 100px 33vw;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 426px) {
+  .main__modal {
+    margin: 100px 0 100px 0;
+    left: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.main__modal-arr {
+  cursor: pointer;
+}
+
+@media (max-width: 426px) {
+  #prev {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+@media (max-width: 426px) {
+  #next {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.close {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  cursor: pointer;
 }

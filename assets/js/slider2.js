@@ -19,7 +19,10 @@ const nextSlide =() => {
     sliderLine.style.left = -value + 'px'
 }
 
-document.querySelector('.btns__btn-next').onclick = prevSlide
+class Slider {
+    constructor() {
+        
+    }
+}
 
-document.querySelector('.btns__btn-prev').onclick = nextSlide
 

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./assets/css/all_attr.css">
-    <title>Document</title>
+    <title>Globe Glide</title>
 </head>
 <body>
     <main class="main">
@@ -20,7 +20,7 @@
                             <p>All Attractions</p>
                         </div>
                         <div class="header__item header__item2">
-                            <a href="venezia.html">Venice</a>
+                            <a href="venice.html">Venice</a>
                         </div>
                         <div class="header__item header__item3">
                             <a href="warsaw.html">Warsaw</a>
@@ -30,37 +30,28 @@
                             <button id="submit"  onclick="search()">Submit</button>
                         </div>
                         <div class="header__filters">
-                            <div class="header__row header__row1">
-                                <label for="Cathedral">Cathedrals</label>
-                                <input type="radio" id="Cathedral" class="radio" name="radio" onclick="filtration(this.id)">
-                                <label for="Palace">Palaces</label>
-                                <input type="radio" id="Palace" class="radio" name="radio" onclick="filtration(this.id)">
-                                <label for="Museum">Museums</label>
-                                <input type="radio" id="Museum" class="radio" name="radio" onclick="filtration(this.id)">
+                            <div class="header__row header__row1" id="header">
                             </div>
                             <div class="header__row header__row2">
                                 <label for="All">All</label>
-                                <input type="radio" id="All" class="radio" name="radio" onclick="render()">
+                                <input type="radio" id="All" class="radio" name="radio" onclick="reload()">
+                                <label for="sort">Sort</label>
+                                <input type="radio" name="radio" id="sort" onclick="sortHeader()">
+                                <label for="filter">Filter</label>
+                                <input type="radio" name="radio" id="filter" onclick="filterHeader()">
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
             <div class="loader" id="loader">
-                <p>loading..</p>
+                <p></p>
             </div>
             <div id="cards">
 
             </div>
-            <div class="main__pagination">
-                <div class="main__pag main__pag1">
-                    <img src="./assets/img/5937625_arrow_down_left_next_right_icon.png" alt="" onclick="prev()">                       
-                </div>
-                <div class="main__pag main__pag2">
-                    <p>...</p>                    
-                </div>
-                <div class="main__pag main__pag3" >
-                    <img src="./assets/img/5937605_arrow_down_left_next_right_icon.png" alt="" onclick="next()">                   
-                </div>
+            <div class="main__pagination" id="pagination">
+                
             </div>
         </div>
     </main>
@@ -69,7 +60,6 @@
 
 
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/js/open_new_html.js"></script>
 </body>
 </html>

@@ -1,10 +1,18 @@
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: rgba(255, 255, 0, 0.152);
+html {
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -13,91 +21,96 @@ a {
 li {
     list-style: none;
 }
+body {
+    background-image: url('../warsaw_img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    @media (max-width: 426px) {
+        background-color: #d4d4d4;
+        background-image: none;
+    }
+}
 .main {
     margin: 0;
-    padding: 0;
-    &__img {
-        @media (max-width: 426px) {
-            width: 425px;
-            height: 300px;
-        }
-        img {
-            width: 1900px;
-            height: 952px;
-            @media (max-width: 426px) {
-                width: 425px;
-                height: 100%;
-            }
-        }
+    max-width: 210vh;
+    width: 100%;
+    height: 100vh;
+    @media (max-width: 426px) {
+        width: 425px;
+        width: 100%;
     }
-    &__title {
-        font-family: Protest Strike;
-        position: absolute;
-        color: white;
-        font-size: 150px;
-        bottom: 540px;
-        left: 580px;
-        text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.219);
-        font-weight: 900;
-        @media (max-width: 426px) {
-            top: 50px;
-            width: 300px;
-            font-size: 40px;
-            left: 90px;
-        }
-    }
-    &__row {
-        position: absolute;
+    &__container {
+        padding-top: 180px;
         display: flex;
-        margin: 0 65px;
-        gap: 30px;
         @media (max-width: 426px) {
             display: block;
         }
     }
-    &__row-1 {
-        bottom: 320px;
-        @media (max-width: 426px) {
-            top: 350px;
-        }
-    }
-    &__row-2 {
-        bottom: 40px;
-        @media (max-width: 426px) {
-            top: 1150px;
-        }
-    }
-    &__card {
-        border: solid 5px yellow;
-        background-color: #6363634f;
-        max-width: 434px;
-        width: 100%;
-        height: 208px;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 24px;
+    &__block {
+        margin-left: 80px;
+        display: block;
+        max-width: 70vh;
         color: white;
-        align-items: center;
-        margin-bottom: 20px;
         @media (max-width: 426px) {
-            width: 134%;
-            position: relative;
-            right: 53px;
-            font-size: 20px;
-            height: 180px;
-        }
-        p {
-            padding: 10px;
-            font-weight: 700;
+            margin-left: 10px;
         }
     }
-    .header {
+    &__title {
+        text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.437);
+        font-weight: 900;
+        font-family: Protest Strike;
+        font-size: 50px;
+    }
+    &__text {
+        text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.437);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__btn {
+        text-align: center;
+        padding: 5px 7px;
+        font-size: 20px;
+        margin-top: 30px;
+        background-color: burlywood;
+        max-width: 15vh;
+        border-radius: 5px;
+        font-family: Protest Strike;
+        :hover {
+            text-decoration: underline;
+        }
+    }
+    &__slider {
+        margin-left: 45vh;
+        margin-top: 24vh;
+        overflow: hidden;
+        @media (max-width: 426px) {
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+    }
+    &__line {
+        transition: all 1s;
+        position: relative;
+        display: flex;
+        gap: 50px;
+    }
+    &__img {
+        animation-name: opacity;
+        animation-duration: 2s;
+        width: 36vh;
+        height: 50vh;
+        img {
+            width: 40vh;
+            height: 56vh;
+            border-radius: 15px;
+        }
+    }    .header {
         position: absolute;
         &__container {
             a {
                 color: white;
             }
-            width: 1830px;
             margin: 20px 30px;
             display: flex;
             @media(max-width: 426px) {
@@ -121,6 +134,9 @@ li {
         &__item {
             font-family: Protest Strike;
             font-size: 30px;
+            :hover {
+                text-decoration: underline;
+            }
         }
         &__item-2 {
             width: 250px;
@@ -196,54 +212,80 @@ li {
         }
     }
 }
-.map {
-    margin-left: 250px;
-    margin-top: 30px;
-    @media (max-width: 426px) {
-        margin-left: 0;
-        margin-top: 1700px;
-    }
-    p {
-        font-size: 40px;
-        font-family: Protest Strike;
-        font-weight: 900;
-        color: black;
-    }
-    iframe {
-        border-radius: 50px;
+.info{
+    &__container {
+        margin: 10vh 15vh;
+        gap: 30px;
+        border: 5px solid rgb(184, 184, 206);
+        border-radius: 10px;
+        background-color: #e8e8d8;
         @media (max-width: 426px) {
-            border-radius: 0;
-            max-width: 420px;
-            width: 100%;
-            height: 420px;
+            margin-left: 5px;
+            width: 424px;
+        }
+        iframe {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            @media (max-width: 426px) {
+                width: 413px;
+                height: 413px;
+            }
+        }
+    }
+    &__row {
+        display: flex;
+        @media (max-width: 426px) {
+            display: block;
+        }
+    }
+    &__text {
+        padding: 30px 50px;
+        font-size: 18px;
+        text-align: center;
+        p {
+            padding-bottom: 10px;
+        }
+    }
+    &__btn {
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 7px;
+        font-size: 18px;
+        margin-top: 30px;
+        background-color: grey;
+        max-width: 30vh;
+        border-radius: 5px;
+        font-family: Protest Strike;
+        :hover {
+            text-decoration: underline;
         }
     }
 }
 .footer {
     &__container {
         display: flex;
-        gap: 140px;
-        height: 200px;
-        padding: 20px 250px;
+        background-color: rgba(255, 255, 255, 0.768);
+        border-bottom: none;
         @media (max-width: 426px) {
-            max-width: 425px;
-            width: 100%;
-            gap: 5px;
-            padding: 30px 75px;
             display: block;
+            text-align: center;
         }
     }
     &__block {
-        font-size: 22px;
-        font-weight: 700;
-        p {
-            padding-top: 20px;
-        }
-        h2 {
-            color: black;
-        }
+        display: block;
+        margin-left: 3vw;
+        padding-top: 5px;
+    }
+    &__item {
+        padding-bottom: 5px;
+        cursor: pointer;
+        color: black;
         a {
             color: black;
         }
+        :hover {
+            text-decoration: underline;
+        }
     }
+
 }

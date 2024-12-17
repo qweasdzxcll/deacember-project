@@ -11,16 +11,15 @@ const renderHeader = async () => {
         spis.push(element['city'])
     });
     let sortSpis = [...new Set(spis)]
-    console.log(sortSpis.length)
     sortSpis.forEach(element => {
         attrs.innerHTML += `
-            <div class="header__item header__attr" id="${element}" onclick="localId(this.id)">
-                <p>${element} Attractions</p>          
+            <div class="header__item header__attr" id="${element}">
+                <a href="attractions.html?city=${element}">${element} Attractions</a>          
             </div>
             `
         items.innerHTML += `
-            <div class="header__burger-item" id="${element}" onclick="localId(this.id)">
-                <p>${element} Attractions</p>          
+            <div class="header__burger-item" id="${element}">
+                <a href="attractions.html?city=${element}">${element} Attractions</a>         
             </div>
             `
         }) 
@@ -32,4 +31,5 @@ const renderHeader = async () => {
         fz.style.fontSize = '20px'
     }
 }
+
 renderHeader()

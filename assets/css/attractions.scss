@@ -31,10 +31,14 @@ li {
     }
     &__elem {
         font-size: 24px;
+        :hover {
+            text-decoration: underline;
+        }
     }
 }
 
 .main {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     &__card {
@@ -49,6 +53,8 @@ li {
         background-color: #e6e6e6;
         border-radius: 30px;
         margin-left: 30vh;
+        animation-name: left;
+        animation-duration: 5s;
         @media(max-width: 426px) {
             margin-left: 0;
         }
@@ -90,6 +96,7 @@ li {
         outline-offset: -6px;
     }
     &__img-gor {
+        background-color: rgba(0, 0, 0, 0.351);
         max-width: 23vh;
         height: 15vh;
         @media(max-width: 426px) {
@@ -113,4 +120,39 @@ li {
             height: 100%;
         }
     }
+    &__modal {
+        position: fixed;
+        z-index: 99;
+        width: 30vw;
+        margin: 100px 33vw;
+        display: flex;
+        align-items: center;
+        @media (max-width: 426px) {
+            margin: 100px 0 100px 0;
+            left: 10px;
+            max-width: 400px;
+            width: 100%;
+        }
+        &-arr {
+            cursor: pointer;
+        }
+    }
+}
+#prev {
+    @media (max-width: 426px) {
+        position: absolute;
+        left: 10px;
+    }
+}
+#next {
+    @media (max-width: 426px) {
+        position: absolute;
+        right: 10px;
+    }
+}
+.close {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    cursor: pointer;
 }
