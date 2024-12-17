@@ -119,14 +119,9 @@ search.addEventListener('focus', () => {
 })
 
 document.getElementById('input').addEventListener('keydown', (event) => {
-    if (event.key === 'Backspace' || 'Alt' || 'Shift' || 'CapsLock' || 'Tab') {
-        console.log('не буква')
-    }
-    else {
         let input = search.value
         const render = new Search(cards);
         render.funcSearch()
-    }
 })
 
 const filtration = (item) => {
