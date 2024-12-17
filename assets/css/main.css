@@ -119,11 +119,6 @@ li {
   position: absolute;
   margin-left: 10px;
 }
-@media (max-width: 426px) {
-  .btns__btn-prev {
-    top: 120px;
-  }
-}
 .btns__btn-next {
   left: 95%;
   position: absolute;
@@ -131,6 +126,5 @@ li {
 @media (max-width: 426px) {
   .btns__btn-next {
     left: 370px;
-    top: 120px;
   }
 }

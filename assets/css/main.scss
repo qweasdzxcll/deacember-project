@@ -106,7 +106,7 @@ li {
         position: absolute;
         margin-left: 10px;
         @media (max-width: 426px) {
-            top: 120px;
+            // top: 120px;
         }
     }
     &__btn-next {
@@ -114,7 +114,7 @@ li {
         position: absolute;
         @media (max-width: 426px) {
             left: 370px;
-            top: 120px;
+            // top: 120px;
         }
     }
 }

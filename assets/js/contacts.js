@@ -56,7 +56,7 @@ const formRender = () => {
         <input type="text" name="firstname" id="firstname" required>
         <label for="Lastname">Lastname: </label>
         <input type="text" name="lastname" id="lastname" required>
-        <label for="email">E-mail: </label>
+        <label for="email">Mail: </label>
         <input type="email" name="email" id="email">
         <label for="comment">Comment: </label>
         <textarea name="comment" id="comment" required></textarea>
